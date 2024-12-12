@@ -1,0 +1,20 @@
+<header>
+{% block site_header %}
+    <nav>
+    {% block site_header_nav %}
+    {% if config.extra.uncouth_theme_hide_header_links == false %}
+        <a href="{{ config.base_url }}">{{ config.title }}</a>
+        {% set root = get_section(path='_index.md') %}
+        {% for section_path in root.subsections %}
+            {% set data = get_section(path=section_path) %}
+            <a href="{{data.permalink}}">{{data.title}}</a>
+        {% endfor %}
+    {% endif %}
+    {% endblock site_header_nav %}
+    </nav>
+    {% block site_header_title %}
+    <h1>{{ config.title }}</h1>
+    <p>{{ config.description }}</p>
+    {% endblock site_header_title %}
+{% endblock site_header %}
+</header>

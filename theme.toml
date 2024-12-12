@@ -1,0 +1,21 @@
+name = "zola-uncouth-template"
+description = ""
+license = ""
+homepage = ""
+min_version = ""
+demo = ""
+
+[extra]
+uncouth_theme_hide_header_links = false
+uncouth_theme_hide_section_children = false
+uncouth_theme_use_page_name = true
+uncouth_theme_use_section_name = true
+
+[author]
+name = "Shawn P. Conroy"
+homepage = "http://github.com/ShawPConroy/"
+
+[original]
+author =  ""
+homepage = ""
+repo = ""
